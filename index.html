@@ -313,6 +313,29 @@
                 grid-column: auto;
             }
         }
+    @keyframes pulsoRoxo {
+    0% {
+        /* Estado inicial: borda normal e sem sombra */
+        border-color: rgba(138, 43, 226, 0.2);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    50% {
+        /* Estado meio: borda acesa e sombra brilhante */
+        border-color: #ffffff; /* Um roxo mais claro */
+        box-shadow: 0 0 20px #ffffff, 0 0 40px #8a2be2; /* Brilho neon */
+    }
+    100% {
+        /* Estado final: volta ao normal */
+        border-color: rgba(138, 43, 226, 0.2);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+}
+
+/* Isso aplica a animação a qualquer coisa com a classe 'piscando' */
+.piscando {
+    /* Nome da animação, duração (1.5 segundos), modo (infinito) */
+    animation: pulsoRoxo 2s infinite;
+}
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -353,7 +376,7 @@
         </div>
         
         <!-- INSTAGRAM -->
-        <div class="logo-item" onclick="window.open('https://www.instagram.com/eeveebony?igsh=cnh1MjA5cXpqemR0', '_blank')">
+        <div class="logo-item" onclick="window.open('https://www.instagram.com/eeveebony?igsh=MXJ4czdrcmllcXF3Yw%3D%3D&utm_source=qr', '_blank')">
             <div class="logo-icon instagram">
                 <i class="fab fa-instagram"></i>
             </div>
@@ -387,6 +410,19 @@
 
     <!-- GALERIA DE FOTOS - 7 PLATAFORMAS -->
     <div class="gallery">
+        <div class="photo-card piscando">
+            <div class="photo-container">
+                <a href="https://privacy.com.br/checkout/eeveeboony" target="_blank" class="photo-link">
+                    <img src="https://i.postimg.cc/7PFCqj3V/20260329-065725-0000.png"
+                        style="object-position: center 90%;">
+                </a>
+                <div class="photo-logo privacy">
+                    <img src="https://i.imgur.com/3eyn7gr.png">
+                </div>
+                <div class="platform-name">Privacy</div>
+            </div>
+        </div>
+        
         <!-- FATAL MODEL -->
         <div class="photo-card">
             <div class="photo-container">
@@ -397,19 +433,6 @@
                     <img src="https://i.imgur.com/9YCpSPU.png">
                 </div>
                 <div class="platform-name">Fatal Model</div>
-            </div>
-        </div>
-        
-        <!-- PRIVACY -->
-        <div class="photo-card">
-            <div class="photo-container">
-                <a href="https://privacy.com.br/checkout/eeveeboony" target="_blank" class="photo-link">
-                    <img src="https://i.imgur.com/ldfVBwk.jpeg">
-                </a>
-                <div class="photo-logo privacy">
-                    <img src="https://i.imgur.com/3eyn7gr.png">
-                </div>
-                <div class="platform-name">Privacy</div>
             </div>
         </div>
         
@@ -429,7 +452,7 @@
         <!-- INSTAGRAM -->
         <div class="photo-card">
             <div class="photo-container">
-                <a href="https://www.instagram.com/eeveebony?igsh=cnh1MjA5cXpqemR0" target="_blank" class="photo-link">
+                <a href="https://www.instagram.com/eeveebony?igsh=MXJ4czdrcmllcXF3Yw%3D%3D&utm_source=qr" target="_blank" class="photo-link">
                     <img src="https://i.imgur.com/l1ZH1Dp.jpeg">
                 </a>
                 <div class="photo-logo instagram">
@@ -477,3 +500,11 @@
                 <div class="platform-name">Kwai</div>
             </div>
         </div>
+    </div>
+
+    <script>
+        // Todos os links funcionando via onclick e href
+        console.log('Site da Eeveeboony carregado com sucesso!');
+    </script>
+</body>
+</html>
