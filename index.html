@@ -74,6 +74,7 @@
         
         .logo-item {
             text-align: center;
+            text-decoration: none; /* Remove sublinhado padrão de links */
             cursor: pointer;
             transition: all 0.3s ease;
         }
@@ -245,7 +246,7 @@
         }
         .instagram { 
             background: #000000;
-            color: white:
+            color: white;
         }
         .tiktok { 
             background: #000000;
@@ -323,25 +324,20 @@
         }
     @keyframes pulsoRoxo {
     0% {
-        /* Estado inicial: borda normal e sem sombra */
         border-color: rgba(138, 43, 226, 0.2);
         box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
     50% {
-        /* Estado meio: borda acesa e sombra brilhante */
-        border-color: #ffffff; /* Um roxo mais claro */
-        box-shadow: 0 0 20px #ffffff, 0 0 40px #8a2be2; /* Brilho neon */
+        border-color: #ffffff;
+        box-shadow: 0 0 20px #ffffff, 0 0 40px #8a2be2;
     }
     100% {
-        /* Estado final: volta ao normal */
         border-color: rgba(138, 43, 226, 0.2);
         box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 }
 
-/* Isso aplica a animação a qualquer coisa com a classe 'piscando' */
 .piscando {
-    /* Nome da animação, duração (1.5 segundos), modo (infinito) */
     animation: pulsoRoxo 2s infinite;
 }
     </style>
@@ -351,69 +347,68 @@
     <!-- HEADER -->
     <div class="header">
         <div class="profile-container">
-            <img src="https://i.imgur.com/pFFZ2wF.jpeg"
-            <div class="profile-pic"></div>
+            <img src="https://i.imgur.com/pFFZ2wF.jpeg" class="profile-pic">
             <div class="name">Eeveeboony</div>
         </div>
     </div>
     
-    <!-- LOGOS NO TOPO - 7 PLATAFORMAS -->
+    <!-- LOGOS NO TOPO - 7 PLATAFORMAS (AJUSTADOS PARA RASTREAMENTO DO CLARITY) -->
     <div class="top-logos">
         <!-- FATAL MODEL -->
-        <div class="logo-item" onclick="window.open('https://fatalmodel.com/acompanhante/819262/eeveeboony', '_blank')">
+        <a class="logo-item" href="https://fatalmodel.com/acompanhante/819262/eeveeboony" target="_blank">
             <div class="logo-icon fatalmodel">
                 <img src="https://i.imgur.com/9YCpSPU.png">
             </div>
             <div class="logo-name">Fatal Model</div>
-        </div>
+        </a>
         
         <!-- PRIVACY -->
-        <div class="logo-item" onclick="window.open('https://privacy.com.br/checkout/eeveeboony', '_blank')">
+        <a class="logo-item" href="https://privacy.com.br/checkout/eeveeboony" target="_blank">
             <div class="logo-icon privacy">
                 <img src="https://i.imgur.com/3eyn7gr.png">
             </div>
             <div class="logo-name">Privacy</div>
-        </div>
+        </a>
         
         <!-- TELEGRAM -->
-        <div class="logo-item" onclick="window.open('https://t.me/eeveeboonyfree', '_blank')">
+        <a class="logo-item" href="https://t.me/eeveeboonyfree" target="_blank">
             <div class="logo-icon telegram">
                 <i class="fab fa-telegram"></i>
             </div>
             <div class="logo-name">Telegram</div>
-        </div>
+        </a>
         
         <!-- INSTAGRAM -->
-        <div class="logo-item" onclick="window.open('https://www.instagram.com/eeveebony?igsh=MXJ4czdrcmllcXF3Yw%3D%3D&utm_source=qr', '_blank')">
+        <a class="logo-item" href="https://www.instagram.com/eeveebony?igsh=MXJ4czdrcmllcXF3Yw%3D%3D&utm_source=qr" target="_blank">
             <div class="logo-icon instagram">
-                <img src="https://i.postimg.cc/wvGtCDCd/Screenshot-2026-07-13-20-58-50-052-com-mi-globalbrowser-edit.jpg"></i>
+                <img src="https://i.postimg.cc/wvGtCDCd/Screenshot-2026-07-13-20-58-50-052-com-mi-globalbrowser-edit.jpg">
             </div>
             <div class="logo-name">OnlyPrivate</div>
-        </div>
+        </a>
         
         <!-- TIKTOK -->
-        <div class="logo-item" onclick="window.open('https://www.tiktok.com/@cosplayerdojob?_r=1&_t=ZS-915o6OEoK82', '_blank')">
+        <a class="logo-item" href="https://www.tiktok.com/@cosplayerdojob?_r=1&_t=ZS-915o6OEoK82" target="_blank">
             <div class="logo-icon tiktok">
                 <i class="fab fa-tiktok"></i>
             </div>
             <div class="logo-name">TikTok</div>
-        </div>
+        </a>
         
         <!-- TWITTER -->
-        <div class="logo-item" onclick="window.open('https://x.com/BoonyEevee?t=erOMCPlJnQuQ-KzGMk1IdA&s=09', '_blank')">
+        <a class="logo-item" href="https://x.com/BoonyEevee?t=erOMCPlJnQuQ-KzGMk1IdA&s=09" target="_blank">
             <div class="logo-icon twitter">
                 <i class="fab fa-twitter"></i>
             </div>
             <div class="logo-name">Twitter</div>
-        </div>
+        </a>
         
         <!-- KWAI -->
-        <div class="logo-item" onclick="window.open('https://k.kwai.com/u/@evelynboony/CpPySuGN', '_blank')">
+        <a class="logo-item" href="https://k.kwai.com/u/@evelynboony/CpPySuGN" target="_blank">
             <div class="logo-icon kwai">
                 <img src="https://i.imgur.com/NcJJERH.png">
             </div>
             <div class="logo-name">Kwai</div>
-        </div>
+        </a>
     </div>
 
     <!-- GALERIA DE FOTOS - 7 PLATAFORMAS -->
@@ -464,7 +459,7 @@
                     <img src="https://i.imgur.com/l1ZH1Dp.jpeg">
                 </a>
                 <div class="photo-logo instagram">
-                    <img src="https://i.postimg.cc/wvGtCDCd/Screenshot-2026-07-13-20-58-50-052-com-mi-globalbrowser-edit.jpg"></i>
+                    <img src="https://i.postimg.cc/wvGtCDCd/Screenshot-2026-07-13-20-58-50-052-com-mi-globalbrowser-edit.jpg">
                 </div>
                 <div class="platform-name">OnlyPrivate</div>
             </div>
@@ -511,8 +506,7 @@
     </div>
 
     <script>
-        // Todos os links funcionando via onclick e href
         console.log('Site da Eeveeboony carregado com sucesso!');
     </script>
 </body>
-                    </html>
+</html>
